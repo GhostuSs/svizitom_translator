@@ -13,9 +13,10 @@ class _App extends State<App>{
   List locales=[
     {'name':'Russian','locale': Locale('ru','RU')},
     {'name':'English','locale': Locale('en','US')},
+    {'name':'Ukrainian','locale': Locale('uk','UA')}
   ];
   var data = Data();
-  var isSelected=[false,true];
+  var isSelected=[false,true,false];
   final TextStyle _textStyle = TextStyle(fontSize: 23,fontWeight: FontWeight.bold,color: Colors.blueGrey);
   @override
   Widget build(BuildContext context) {
@@ -37,9 +38,10 @@ class _App extends State<App>{
                   onPressed: (index){
                     setState(() {
                       Get.updateLocale(locales[index]['locale']);
-                      for(index=0;index<isSelected.length;index++)
+                      isSelected=[false,false,false];
                       isSelected[index] = !isSelected[index];
-                    });
+                    }
+                      );
                   },
                   children: [
                     Padding(
@@ -56,6 +58,13 @@ class _App extends State<App>{
                           style: _textStyle,
                         )
                     ),
+                    Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Ukrainian'.tr,
+                          style: _textStyle,
+                        )
+                    )
                   ],
               ),
               Padding(

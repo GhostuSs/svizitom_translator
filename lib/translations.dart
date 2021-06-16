@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 class Translator extends Translations{
   @override
-  // TODO: implement keys
   Map<String, Map<String, String>> get keys => {
     'en_US' : {
       'title' : 'Title',
@@ -16,6 +15,12 @@ class Translator extends Translations{
       'subtitle': 'Подзаголовок',
       'Russian':'Русккий',
       'English':'Английский',
+    },
+    'uk_UA' : {
+      'title' : 'Заголовок',
+      'subtitle': 'Підзаголовок',
+      'Russian':'Російський',
+      'English':'Англійський',
     }
   };
 

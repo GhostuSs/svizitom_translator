@@ -9,18 +9,21 @@ class Translator extends Translations{
       'subtitle': 'Subtitle',
       'Russian':'Russian',
       'English':'English',
+      'Ukrainian':'Ukrainian'
     },
     'ru_RU' : {
       'title' : 'Заголовок',
       'subtitle': 'Подзаголовок',
-      'Russian':'Русккий',
+      'Russian':'Руский',
       'English':'Английский',
+      'Ukrainian':'Украинский'
     },
     'uk_UA' : {
       'title' : 'Заголовок',
       'subtitle': 'Підзаголовок',
       'Russian':'Російський',
       'English':'Англійський',
+      'Ukrainian':'Украiньска'
     }
   };
 
